@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Merriweather:wght@900&family=Orbitron:wght@600&family=Oswald:wght@300;500;600;700&family=PT+Sans+Narrow:wght@400;700&family=Roboto+Slab:wght@300;700;900&family=Roboto:ital,wght@0,400;0,500;1,700;1,900&family=Rowdies:wght@300;400&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: transparent;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  opacity: 0.7;
+
+
+}
+
+.navbar .navbar-logo {
+  height: 50px;
+  margin-left: 40px;
+
+}
+
+.navbar-items {
+  display: flex;
+  z-index: 999;
+}
+
+.navbar-items a {
+  font-size: 18px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.navbar-items a:hover {
+  color: red;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+}
+
+.content {
+  padding: 20px;
+}
+
+/* home page start */
+
+.home {
+  background-image: url(./img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 80vh;
+}
+
+.design img {
+  height: 450px;
+}
+
+.headings p {
+  margin-left: 5px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 10px;
+  text-align: center;
+  border: 3px dashed black;
+}
+
+.headings h2 {
+  margin-left: 5px;
+  margin-bottom: 60px;
+  font-family: 'Rowdies', cursive;
+  font-weight:400 ;
+  font-size: 60px;
+  color:  rgb(84, 30, 30);
+  filter: drop-shadow(4px 4px 2px white);
+}
+
+/* home page end */
+
+
+
+/* about page start */
+.about {
+  width: 100%;
+  height: 70vh;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  height: 400px;
+}
+
+.box1 {
+  width: 600px;
+  height: 410px;
+  background-image: url(./img/burgur1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  margin: 10px 15px 10px 0;
+  border-radius: 10px;
+}
+
+.box1 img {
+  width: 480px;
+}
+
+.container1 {
+  color: white;
+}
+.box1 h2,
+.box2 h2{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.box1 h1,
+.box2 h1{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.box2 img,
+.box3 img {
+  width: 350px;
+}
+
+.right-side .box2 {
+  width: 500px;
+  height: 200px;
+  background-image: url(./img/burgur2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  margin: 10px 15px 10px 0;
+  border-radius: 10px;
+}
+
+.right-side .box3 {
+  background-image: url(./img/burgur3.jpg);
+}
+
+/* about page end */
+
+
+/* Order page sart */
+.order {
+  height: 90vh;
+}
+
+.head {
+  text-align: center;
+}
+
+.head button {
+  padding: 10px;
+  background: rgb(192, 143, 8);
+  font-size: 18px;
+  border: none;
+}
+
+.head h2 {
+  font-family: 'Rowdies', cursive;
+  font-weight:400 ;
+  font-size: 60px;
+  color:  rgb(84, 30, 30);
+  filter: drop-shadow(4px 4px 5px gray);
+  margin: 15px 0;
+}
+
+.head p {
+  font-size: 16px;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  min-width: calc(33.33% - 20px);
+  height: 400px;
+  background-color: transparent;
+  padding: 20px;
+  text-align: center;
+  flex-shrink: 0;
+  margin: 0 10px;
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 300px;
+  height: auto;
+}
+
+.card h2 {
+  margin-top: 15px;
+}
+
+.card p {
+  margin-top: 10px;
+}
+
+.carousel-nav {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-nav button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: orange;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* order page end */
+
+
+/* Upcoming events start */
+
+.upcoming {
+  height: 70vh;
+  width: 100%;
+}
+
+.paragraph h2 {
+  font-family: 'Rowdies', cursive;
+  font-weight:400 ;
+  font-size: 30px;
+  color:  rgb(84, 30, 30);
+  filter: drop-shadow(4px 4px 5px gray);
+  margin-bottom: 20px;
+}
+
+.paragraph p {
+  font-size: 18px;
+  padding: 5px;
+
+}
+
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.events img {
+  height: 350px;
+  border-radius: 10px;
+}
+
+/* upcomin event end */
+
+/* Booking section start */
+.book {
+  height: 70vh;
+  width: 100%;
+  background-image: url(./img/booking.png);
+  background-position: center;
+  background-repeat: repeat;
+}
+
+
+.book h3 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.comments {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.comments .name {
+  height: 40px;
+  width: 49%;
+  border-radius: 5px;
+  margin: 0 auto 20px auto;
+}
+
+.comments .name[type="datetime-local"]
+{
+  font-size: 18px;
+}
+
+.comments ::placeholder {
+  padding-left: 15px;
+  font-size: 18px;
+  color: black;
+}
+
+form::placeholder {
+  padding-left: 15px;
+}
+
+.comments .btn {
+  font-size: 18px;
+  padding: 5px;
+  font-family: 'Rowdies', cursive;
+  font-weight:400 ;
+  font-size: 18px;
+   background-color: red;
+   border: none;
+   border-radius: 5px;
+   display: flex;
+   margin: 0 auto;
+}
+
+.comments .btn:hover{
+  color: white;
+}
+
+/* booking section end */
+
+
+/* footer start */
+
+.footer {
+  height: 60vh;
+  width: 100%;
+}
+
+.box {
+  margin: auto;
+  width: 90%;
+  height: 400px;
+  display: flex;
+ background-image: url(./img/burgur2.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+align-items: flex-end;
+justify-content: space-around;
+}
+
+.address h2{
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: white;
+}
+
+.address p{
+  font-size: 16px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.social i{
+
+  font-size: 18px;
+  color: white;
+  margin: 10px;
+}
+
+/* footer end */
+@media screen and (max-width: 1210px) {
+
+  /* Heading media start */
+  .design img {
+    height: 300px;
+  }
+
+  .headings h2 {
+    font-size: 50px;
+  }
+
+  /* Heading media end */
+
+  /* about media start */
+  .box1 {
+    width: 350px;
+  }
+
+  .right-side .box2 {
+    width: 300px;
+    margin: 10px 0;
+  }
+
+  /* about media end */
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 70vh;
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-start;
+  }
+
+  .design img {
+    height: 200px;
+  }
+}
+
+/* about media start */
+
+
+/* about media end */
+
+@media screen and (max-width: 768px) {
+  .navbar-items {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-items.active {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 59px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+  }
+ 
+
+  /* home media start */
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 80vh;
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+  }
+
+
+  .design img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .headings p {
+    margin: 30px 0 15px 0;
+    font-size: 16px;
+    padding: 3px;
+    width: 300px;
+  }
+
+  .headings h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+
+  /* home media end */
+
+  /* about media start */
+
+  .about {
+    height: auto;
+  }
+
+  .container1 {
+    height: auto;
+  }
+
+  .box1 {
+    margin: 0;
+  }
+
+  .box1 {
+    width: 350px;
+  }
+
+  .right-side .box2 {
+    width: 300px;
+    margin: 10px 0;
+  }
+
+  /* about media end */
+
+  /* oredr media start */
+  .head h2{
+    font-size: 29px;
+  }
+  .order {
+    height: auto;
+  }
+
+  .card {
+    min-width: calc(50% - 20px);
+    margin: 0 5px;
+  }
+
+  /* order media end */
+
+  /* upcoming events  media start*/
+
+  .upcoming {
+    height: auto;
+  }
+   
+  .paragraph h2{
+    font-size: 29px;
+    text-align: center;
+  }
+  .paragraph p{
+    text-align: center;
+    font-size: 16px;
+  }
+  .events {
+    flex-direction: column;
+    margin:15px 0;
+  }
+
+  .events img {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* upcoming events media end */
+
+  /* booking section start */
+  .book{
+    height: auto;
+  }
+  .comments .name {
+    width: 100%;
+
+  }
+
+  /* Booking section end */
+
+/* footer  media start */
+
+.footer{
+  height: auto;
+}
+.box{
+  margin-top: 10px;
+  flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+/* footer media end */
+}
+
+
+
+@media (max-width: 480px) {
+  .card {
+    min-width: calc(100% - 20px);
+    margin: 0 5px;
+  }
+
+
+}
